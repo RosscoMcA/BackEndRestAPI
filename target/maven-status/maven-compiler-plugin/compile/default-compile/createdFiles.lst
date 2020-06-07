@@ -1,0 +1,10 @@
+Model\Product.class
+Test\TestJSONParser.class
+Utils\ProductSort$1.class
+Utils\COMPARISON_RESULT.class
+Controller\MainServiceController.class
+Utils\ProductSort.class
+Model\ProductList.class
+Model\Price.class
+Model\ProductList$SortOrder.class
+Utils\DataParser.class
