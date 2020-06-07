@@ -3,7 +3,7 @@ package Model;
 //POJO to handle price data
 public class Price {
 
-    Price()
+    public Price()
     {
         value =0.00;
         currency= "UNSET";

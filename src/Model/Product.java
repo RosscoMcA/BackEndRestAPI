@@ -19,7 +19,7 @@ public class Product {
         this.department = department;
     }
 
-    Product()
+    public Product()
     {
 
     }

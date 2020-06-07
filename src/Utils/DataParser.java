@@ -1,6 +1,9 @@
-package Model;
+package Utils;
 
 
+import Model.Price;
+import Model.Product;
+import Model.ProductList;
 import org.json.simple.JSONArray;
 import org.json.simple.parser.JSONParser;
 
@@ -9,8 +12,9 @@ import java.util.Iterator;
 import java.util.Map;
 
 
-public class JSONDataParser {
+public class DataParser {
 
+    private ProductList productList = new ProductList();
     public void loadFile(String path)
     {
         try {
@@ -24,6 +28,7 @@ public class JSONDataParser {
                 Map price = (Map) ((Map) products.get(i)).get("price");
                 Price newPrice = parsePriceData(price.entrySet().iterator());
                 prod.setPrice(newPrice);
+                productList.addProduct(prod);
             }
 
         }
@@ -114,5 +119,10 @@ public class JSONDataParser {
         }
 
         return newPrice;
+    }
+
+    public ProductList retrieveProductList()
+    {
+        return productList;
     }
 }
