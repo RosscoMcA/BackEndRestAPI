@@ -2,6 +2,7 @@ Model\Product.class
 Test\TestJSONParser.class
 Utils\ProductSort$1.class
 Utils\COMPARISON_RESULT.class
+Controller\ProductController.class
 Controller\MainServiceController.class
 Utils\ProductSort.class
 Model\ProductList.class
